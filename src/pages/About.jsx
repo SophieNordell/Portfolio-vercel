@@ -62,7 +62,7 @@ export default function About() {
           </p>
           <div>
             <ul>
-              <li>* I'm 31 years old</li>
+              <li>* I am 31 years old</li>
               <li>* Studied to become a preschool teacher in high school. </li>
               <li>* I love to play videogames in my spare time.</li>
               <li>* I love to read.</li>
