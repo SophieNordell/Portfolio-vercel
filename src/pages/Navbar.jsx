@@ -1,5 +1,5 @@
 import { useFormik } from "formik";
-import { RxHamburgerMenu } from "react-icons/Rx";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function Navbar() {
   const formik = useFormik({

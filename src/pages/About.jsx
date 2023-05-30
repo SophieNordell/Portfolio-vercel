@@ -4,11 +4,10 @@ import { TbBrandJavascript } from "react-icons/tb";
 import { GrReactjs } from "react-icons/gr";
 import { SiTailwindcss } from "react-icons/si";
 import { SiNextdotjs } from "react-icons/si";
-import { DiCss3 } from "react-icons/Di";
+import { DiCss3 } from "react-icons/di";
 import { AiFillHtml5 } from "react-icons/ai";
 import { SiRedux } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
-/* import { RxDotFilled } from "react-icons/Rx"; */
 import React from "react";
 
 export default function About() {
