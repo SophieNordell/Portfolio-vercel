@@ -1,8 +1,8 @@
 import { useFormik } from "formik";
-import { FaGithub } from "react-icons/Fa";
-import { AiFillLinkedin } from "react-icons/Ai";
-import { AiFillFacebook } from "react-icons/Ai";
-import { ImMail4 } from "react-icons/Im";
+import { FaGithub } from "react-icons/fa";
+import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillFacebook } from "react-icons/ai";
+import { ImMail4 } from "react-icons/im";
 
 export default function Contact() {
   const formik = useFormik({
