@@ -1,14 +1,14 @@
-import { AiOutlineStar } from "react-icons/Ai"; // Tom stjärna
-import { AiFillStar } from "react-icons/Ai"; // Fylld stjärna
-import { TbBrandJavascript } from "react-icons/Tb";
-import { GrReactjs } from "react-icons/Gr";
-import { SiTailwindcss } from "react-icons/Si";
-import { SiNextdotjs } from "react-icons/Si";
+import { AiOutlineStar } from "react-icons/ai"; // Tom stjärna
+import { AiFillStar } from "react-icons/ai"; // Fylld stjärna
+import { TbBrandJavascript } from "react-icons/tb";
+import { GrReactjs } from "react-icons/gr";
+import { SiTailwindcss } from "react-icons/si";
+import { SiNextdotjs } from "react-icons/si";
 import { DiCss3 } from "react-icons/Di";
-import { AiFillHtml5 } from "react-icons/Ai";
-import { SiRedux } from "react-icons/Si";
-import { SiTypescript } from "react-icons/Si";
-import { RxDotFilled } from "react-icons/Rx";
+import { AiFillHtml5 } from "react-icons/ai";
+import { SiRedux } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+/* import { RxDotFilled } from "react-icons/Rx"; */
 import React from "react";
 
 export default function About() {
