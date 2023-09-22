@@ -18,8 +18,8 @@ export default function About() {
               <li>* I love to play videogames in my spare time.</li>
               <li>* I love to read.</li>
               <li>
-                * Right now im studying to become a frontend developer at Chas
-                Academy in Stockholm, Sweden..
+                * Right now im studying to become a Frontend developer at Chas
+                Academy in Stockholm, Sweden.
               </li>
             </ul>
             <div className=" flex flex-col">
