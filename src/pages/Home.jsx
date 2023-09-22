@@ -11,7 +11,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col justify-center -translate-x-15 ">
         <h1 className="font-bold text-4xl font-serif text-gray-600 mb-10 md:text-left ">
-          Hello, I am Sophie Nordell
+          Hello, <br />I am Sophie Nordell
         </h1>
         <p className="font-serif font-semibold text-xl text-gray-500">
           Currently looking for a LIA:
