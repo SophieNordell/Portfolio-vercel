@@ -33,7 +33,7 @@ export default function Projects() {
           <div className="p-3">
             <h1 className="font-serif text-gray-700 text-xl">Zoom redesign</h1>
 
-            <p>useing: JavaScript, Html, tailwind, React text-lg</p>
+            <p>Useing: JavaScript, Html, tailwind, React text-lg</p>
           </div>
         </a>
         <a href="https://radio-player-react-blond.vercel.app/">
@@ -43,7 +43,7 @@ export default function Projects() {
           <div className="p-3">
             <h1 className="font-serif text-gray-700 text-xl">Radio Project</h1>
 
-            <p> useing: React, fetching API, tailwind, html, javaScript</p>
+            <p> Useing: React, fetching API, tailwind, html, javaScript</p>
           </div>
         </a>
       </div>

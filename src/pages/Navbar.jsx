@@ -17,7 +17,7 @@ export default function Navbar() {
           alt="Logo"
         />
         <div className="flex gap-12 px-5 text-lg text-gray-600 ">
-          <button className=" text-gray-600 hover:text-gray-300">Home</button>
+          {/*  <button className=" text-gray-600 hover:text-gray-300">Home</button>
 
           <button className="hover:text-gray-300 text-gray-600">
             About me
@@ -31,7 +31,7 @@ export default function Navbar() {
 
           <button className="md:hidden">
             <RxHamburgerMenu size={25} />
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
