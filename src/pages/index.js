@@ -3,6 +3,7 @@ import Home from "./Home";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Learning from "@/pages/Learning";
 
 export default function Index() {
   return (
@@ -11,6 +12,7 @@ export default function Index() {
         <Navbar />
       </div>
       <Home />
+      <Learning />
       <About />
       <Projects />
       <Contact />

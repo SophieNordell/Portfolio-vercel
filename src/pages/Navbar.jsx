@@ -1,18 +1,11 @@
-import { useFormik } from "formik";
-import { RxHamburgerMenu } from "react-icons/rx";
+/* import { RxHamburgerMenu } from "react-icons/rx"; */
 
 export default function Navbar() {
-  /*  const formik = useFormik({
-    name: "",
-    email: "",
-    message: "",
-  }); */
-
   return (
     <div className="">
-      <div className="flex justify-between gap-12 border-b-2 p-5 text-lg ">
+      <div className="flex justify-between border-b-2 p-2 text-lg  ">
         <img
-          className="flex rounded-3xl w-56 "
+          className="flex rounded-3xl w-56  "
           src="/sophie-logo.png"
           alt="Logo"
         />
