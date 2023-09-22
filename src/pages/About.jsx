@@ -12,44 +12,43 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="flex justify-center bg-gray-100 p-16">
+    <div className="md:flex justify-center bg-gray-100 p-16">
       <div>
         <h1 className="text-center text-2xl text-gray-600 mb-9 font-bold font-serif">
           Currently learning
         </h1>
-        <div className="flex gap-5">
-          {/* ------------------------JavaScript---------------------------------- */}
-          <div>
+        <div className="flex justify-center">
+          <div
+            className="md:flex gap-5 mb-10 mr-10
+         "
+          >
+            {/* ------------------------JavaScript---------------------------------- */}
+
             <TbBrandJavascript className="text-yellow-500" size={65} />
-          </div>
 
-          {/* --------------------------REACTJS------------------------------------- */}
-          <div>
+            {/* --------------------------REACTJS------------------------------------- */}
+
             <GrReactjs className="text-blue-400" size={65} />
-          </div>
 
-          {/*  -------------------------TAILWIND------------------------------ */}
-          <div className="mb-16">
+            {/*  -------------------------TAILWIND------------------------------ */}
+
             <SiTailwindcss className="text-blue-500" size={65} />
-          </div>
 
-          {/*  --------------------------NEXT-------------------------------- */}
-          <div>
+            {/*  --------------------------NEXT-------------------------------- */}
             <SiNextdotjs className=" text-black" size={65} />
           </div>
-          {/* .---------------------------CSS---------------------------------- */}
           <div>
+            {/* .---------------------------CSS---------------------------------- */}
+
             <DiCss3 className="text-indigo-500" size={65} />
-          </div>
-          {/*-------------------------------- HTML-------------------------------- */}
-          <div>
+
+            {/*-------------------------------- HTML-------------------------------- */}
+
             <AiFillHtml5 className="text-orange-600" size={65} />
-          </div>
-          <div>
+
             {/*  --------------------------Redux--------------------------------- */}
             <SiRedux className="text-purple-800" size={65} />
-          </div>
-          <div>
+
             {/* -------------------------typeScript-------------------------------- */}
             <SiTypescript className="text-blue-500" size={65} />
           </div>

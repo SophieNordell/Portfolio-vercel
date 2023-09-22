@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="flex justify-between p-24 border-b-2 ">
+    <div className="flex justify-between p-10 border-b-2 ">
       <div className="">
         <img
           className="rounded-full w-fit md:block"

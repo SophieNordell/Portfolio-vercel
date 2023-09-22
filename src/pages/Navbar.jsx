@@ -2,11 +2,11 @@ import { useFormik } from "formik";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function Navbar() {
-  const formik = useFormik({
+  /*  const formik = useFormik({
     name: "",
     email: "",
     message: "",
-  });
+  }); */
 
   return (
     <div className="">
