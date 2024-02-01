@@ -8,11 +8,11 @@ import { SiRedux } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 
 //bg-gray-100
+//bg-[#4D5D53] - mörkare grön
 
 export default function Learning() {
   return (
-    <div className="pt-10 bg-[#4D5D53]">
-      <img className="absolute w-full " src="confetti1.gif" alt="confetti" />
+    <div className="pt-10 bg-[#4D5D53] mx-auto font-nunito ">
       <h1 className="text-center text-2xl text-gray-300 mb-9  font-bold font-serif ">
         Currently learning
       </h1>
