@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     // bg-[#8F9779] - ljusgrön
-    <div className=" font-nunito p-5 flex md:justify-around border-b-2 border-slate-700 pt-16 bg-[#8F9779] ">
+    <div className="font-nunito p-5 flex md:justify-around border-b-2 border-slate-700 pt-16 bg-[#8F9779] ">
       <div className="hidden md:block  ">
         <img
           className="rounded-full mb-16 shadow-2xl"
@@ -11,8 +11,8 @@ export default function Home() {
         />
       </div>
 
-      <div className="flex flex-col justify-center">
-        <h1 className="font-bold text-4xl font-serif text-gray-300 mb-10 md:text-left ">
+      <div className="flex flex-col justify-center ">
+        <h1 className="font-bold text-4xl font-serif text-gray-300 mb-10 md:text-left  ">
           Hello, <br />I am Sophie Nordell
         </h1>
         <p className="font-serif font-semibold text-xl text-gray-300">

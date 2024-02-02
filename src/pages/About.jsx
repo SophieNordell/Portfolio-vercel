@@ -13,7 +13,18 @@ export default function About() {
           </p>
 
           <div>
-            <ul className="text-slate-300 font-semibold text-lg mb-4">
+            <div className="text-slate-300 text-lg text-nunito flex flex-col">
+              <li className="mb-6">
+                My name is Sophie Nordell and im 31 years old
+              </li>
+              <li className="mb-6">
+                I am Currently studying to become a frontend developer as Chas
+                Academy in Stockholm.
+              </li>
+              <li className="mb-6"> I love to read</li>
+              <li> In my spare time I love to play videogames. </li>
+            </div>
+            <ul className="text-slate-300 font-semibold text-lg mb-4 sm: hidden text-nunito">
               <li className="flex items-center gap-2 mb-4">
                 <AiFillStar /> I am 31 years old
               </li>

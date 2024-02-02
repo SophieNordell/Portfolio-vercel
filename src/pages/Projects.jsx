@@ -22,9 +22,8 @@ export default function Projects() {
       <h1 className="text-2xl text-gray-300 font-serif font-bold ">
         To see some of my projects, click on a photo!
       </h1>
-
+      {/* ---------------------Zoom Project ----------------------- */}
       <div className="grid grid-cols-1 md:grid-cols-3  mx-auto max-w-7xl gap-5 mt-16 bg-[#4D5D53]">
-        {/* ---------------------Zoom Project ----------------------- */}
         <div className="col-span-1 md:col-span-1 mt-5">
           <a
             href="https://zoom-redesign-pi.vercel.app/"
@@ -32,7 +31,7 @@ export default function Projects() {
             className="col-span-1"
           >
             <img
-              className="w-full h-48  object-cover"
+              className="w-full h-64  object-cover"
               src="Zoom.png"
               alt="projectZoom"
             />
@@ -68,7 +67,7 @@ export default function Projects() {
           >
             <div className="rounded p-5">
               <img
-                className="w-full h-48 object-cover"
+                className="w-full h-64 object-cover"
                 src="RadioPlayer.png"
                 alt="Radio"
               />
@@ -104,7 +103,7 @@ export default function Projects() {
           >
             <div className="rounded p-5">
               <img
-                className="w-full h-48 object-cover"
+                className="w-full h-64 object-cover"
                 src="blueyMemory.png"
                 alt="Bluey Memory"
               />
@@ -145,7 +144,7 @@ export default function Projects() {
 
       {/* -----------------------------NEW PROJECTS--------------------------------*/}
 
-      {/*  weather app */}
+      {/*  -------------------------- Weather app -------------------*/}
       <div className="grid grid-cols-1 md:grid-cols-3 mb-20 mx-auto max-w-7xl gap-5 mt-16 bg-[#4D5D53]">
         <div>
           <a
@@ -155,7 +154,7 @@ export default function Projects() {
           >
             <div className="rounded overflow-hidden">
               <img
-                className="w-full h-48 object-cover"
+                className="w-full h-64 object-cover"
                 src="weatherPhone.png"
                 alt="weatherApp"
               />
@@ -185,7 +184,7 @@ export default function Projects() {
           </div>
         </div>
 
-        {/*  RebalRunway */}
+        {/* --------------------------- RebalRunway ---------------------------*/}
         <div className="md:ml-10">
           <a
             href="https://rebel-runway-webshop-kazo5oylo-chasacademy-linnea-svensson.vercel.app/"
@@ -194,7 +193,7 @@ export default function Projects() {
           >
             <div className="rounded overflow-hidden">
               <img
-                className="w-full h-48 object-cover"
+                className="w-full h-64 object-cover"
                 src="rebelrunway.png"
                 alt="projectZoom"
               />
@@ -225,19 +224,16 @@ export default function Projects() {
           </div>
         </div>
 
-        {/*  Ai-AdWords */}
+        {/* -------------------- Ai-AdWords -----------------------*/}
+
         <div className="md:ml-10">
           <a href="" target="_blank" className="w-11/12">
-            <div className="rounded overflow-hidden">
-              <img
-                className="w-full h-48 object-cover"
-                src="comingSoon3.jpg"
-                alt="project"
-              />
+            <div className="rounded overflow-hidden flex items-center">
+              <img src="comingsoon3.jpg" alt="" />
             </div>
           </a>
           <div className="mt-3">
-            <h1 className="font-serif text-xl text-gray-300">Ai-AdWords</h1>
+            <h1 className="font-serif text-xl text-gray-300 ">Ai-AdWords</h1>
             <div>
               <button
                 onClick={() => openModal(setIsAiAdWordsModalOpen)}

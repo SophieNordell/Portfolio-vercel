@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <div className="flex justify-between border-b-2 border-b- p-2 text-lg bg-[#4D5D53] border-slate-700 ">
       <img
-        className="flex rounded-3xl w-56  "
+        className="md:flex rounded-3xl w-56 sm: hidden  "
         src="/sophie-logo.png"
         alt="Logo"
       />
