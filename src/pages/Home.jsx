@@ -16,8 +16,8 @@ export default function Home() {
           Hello, <br />I am Sophie Nordell
         </h1>
         <p className="font-serif font-semibold text-xl text-gray-300">
-          Currently looking for a LIA:
-          <br /> week 47 2023 - week 18 2024
+          I am currently interning at Linespotting <br />
+          as a Front-end Developer.
         </p>
         <a href="Cv Sophie Nordell.pdf" download={"Cv Sophie Nordell.pdf"}>
           <button className="border block border-[#4D5D53] w-fit px-3 rounded-md mt-10 mb-10 hover:bg-gray-300 hover:text-gray-600 text-gray-300 bg-[#4D5D53] shadow-lg font-serif">

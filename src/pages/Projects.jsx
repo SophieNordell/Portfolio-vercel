@@ -49,10 +49,11 @@ export default function Projects() {
               <Modal
                 isOpen={isZoomModalOpen}
                 onClose={() => closeModal(setIsZoomModalOpen)}
-                content="I detta skolprojektet använde jag mig utav React, Tailwind och JavaScript för att 
-                omgestalta Zooms webbplats och göra den mer strukturerad och användarvänlig.
-                 Genom att implementera dessa teknologier skapade jag en renare och mer effektiv 
-                 användarupplevelse, vilket resulterade i en mindre plottrig och mer organiserad design"
+                content="In this school project, I utilized React, 
+                Tailwind, and JavaScript to redesign the Zoom website and make it more 
+                structured and user-friendly. By implementing these technologies, I 
+                created a cleaner and more efficient user experience, resulting in a 
+                less cluttered and more organized design."
               />
             </div>
           </div>
@@ -85,11 +86,10 @@ export default function Projects() {
               <Modal
                 isOpen={isRadioModalOpen}
                 onClose={() => closeModal(setIsRadioModalOpen)}
-                content="I detta skolprojektet skapade jag en radiospelsapplikation
-      där jag använde mig av JavaScript för att hämta data från ett API.
-      Genom att integrera API-hämtningen direkt i JavaScript kunde jag dynamiskt ladda 
-      in radioinnehållet och ge användarna
-      en enhetlig radioupplevelse."
+                content="In this school project, I created a radio application 
+                where I used JavaScript to fetch data from an API. By integrating the 
+                API call directly into JavaScript, I was able to dynamically load radio 
+                content and provide users with a seamless radio experience."
               />
             </div>
           </div>
@@ -124,12 +124,12 @@ export default function Projects() {
               <Modal
                 isOpen={isBlueyModalOpen}
                 onClose={() => closeModal(setIsBlueyModalOpen)}
-                content="I ett utav mina egna projekt skapade jag ett interaktivt memory-spel 
-                speciellt utformat för små barn. Genom att använda mig av React för att bygga
-                 gränssnittet, Tailwind CSS för stilisering och JavaScript för logiken, 
-                 skapade jag en underhållande och pedagogisk spelupplevelse. 
-                 Målet var att erbjuda barnen en rolig plattform för minnesövningar 
-                 samtidigt som de interagerar med färgglada och engagerande element."
+                content="In one of my own projects, I created an interactive memory game 
+                specifically designed for young children. By using React to build the 
+                interface, Tailwind CSS for styling, and JavaScript for the logic, 
+                I created an entertaining and educational gaming experience. The goal 
+                was to provide children with a fun platform for memory exercises while 
+                interacting with colorful and engaging elements."
               />
             </div>
           </div>
@@ -174,11 +174,12 @@ export default function Projects() {
               <Modal
                 isOpen={isWeatherModalOpen}
                 onClose={() => closeModal(setIsWeatherModalOpen)}
-                content="Denna väderapp utvecklade jag och en kompis i klassen en charmig mobilapp med
-                   React Native och JavaScript. Denna lekfulla applikation är designad för både barn
-                   och vuxna, erbjudandes en underhållande upplevelse. Genom att kombinera 
-                   teknologi och användarvänlighet skapade jag en app som 
-                   inte bara tilltalar de yngre, utan också väcker glädje och intresse hos vuxna användare"
+                content="My classmate and I developed this weather app, 
+                a charming mobile application using React Native and JavaScript. 
+                This playful application is designed for both children and adults, 
+                offering an entertaining experience. By combining technology and 
+                user-friendliness, I created an app that appeals not only to younger 
+                audiences but also sparks joy and interest among adult users"
               />
             </div>
           </div>
@@ -211,14 +212,15 @@ export default function Projects() {
               <Modal
                 isOpen={isRebelRunwayModalOpen}
                 onClose={() => closeModal(setIsRebelRunwayModalOpen)}
-                content="I ett nyligen genomfört skolprojekt, var vi en grupp på sex personer 
-                som arbetade tillsammans för att skapa en e-handelswebbplats för kläder. 
-                Genom att kombinera våra kunskaper i JavaScript, Tailwind CSS, och Typescript 
-                skapade vi en användarvänlig och snygg plattform. För att hantera vår databasstruktur 
-                valde vi Prisma, vilket gav oss en effektiv och pålitlig lösning för databasinteraktioner. 
-                Projektet gav oss inte bara teknisk erfarenhet utan också möjligheten att samarbeta och 
-                utveckla våra färdigheter inom webbutveckling. Det var en givande upplevelse där vi 
-                integrerade olika teknologier för att skapa en fullständig och fungerande webbplats"
+                content="In a recently completed school project, we were a group of six 
+                people working together to create an e-commerce website for clothing. 
+                By combining our skills in JavaScript, Tailwind CSS, and Typescript, 
+                we created a user-friendly and stylish platform. To manage our database 
+                structure, we chose Prisma, which provided us with an efficient and reliable 
+                solution for database interactions. The project not only gave us technical 
+                experience but also the opportunity to collaborate and develop our skills 
+                in web development. It was a rewarding experience where we integrated 
+                various technologies to create a complete and functional website."
               />
             </div>
           </div>
@@ -241,19 +243,21 @@ export default function Projects() {
               >
                 About the project
               </button>
+
               <Modal
                 isOpen={isAiAdWordsModalOpen}
                 onClose={() => closeModal(setIsAiAdWordsModalOpen)}
-                content="Under de senaste sex månaderna har jag och en kollega engagerat 
-                oss i ett spännande projekt med företaget Linespotting under vår LIA. Vårt fokus 
-                har varit att skapa en praktisk mellanhandslösning för dem som arbetar med Google Ads. 
-                Genom att utnyttja teknologier som Next.js och Tailwind CSS har vi byggt en responsiv 
-                och effektiv webbplattform. Firebase används som vår robusta databaslösning, och 
-                projektet är smidigt samordnat genom GitHub med hjälp av Git för versionshantering. 
-                Denna erfarenhet har inte bara stärkt våra tekniska färdigheter utan har också gett 
-                oss insikt i hur verkliga projekt drivs och samverkar med företag i branschen.
-                Projektet kommer att lanseras inom en snar framtid och kommer finnas att arbeta med ute
-                på marknaden."
+                content="Over the past six months, a colleague and I have been 
+                involved in an exciting project with the company Linespotting during 
+                our internship. Our focus has been on creating a practical intermediary
+                 solution for those working with Google Ads. Leveraging technologies like
+                  Next.js and Tailwind CSS, we've built a responsive and efficient web 
+                  platform. Firebase serves as our robust database solution, and the project
+                   is smoothly coordinated through GitHub using Git for version control. 
+                   This experience has not only strengthened our technical skills but has 
+                   also provided insight into how real projects are managed and interact 
+                   with companies in the industry. The project will be launched in the near 
+                   future and will be available for use in the market."
               />
             </div>
           </div>
