@@ -12,8 +12,8 @@ export default function About() {
         </p>
 
         <div>
-          <div className="flex justify-center items-center border p-12 border-[#4D5D53]">
-            <section className="text-slate-300 text-xl  text font-nunito w-2/3 leading-6 ">
+          <div className="flex justify-center items-center p-16  border-[#4D5D53] border-2 shadow-xl mb-10 ">
+            <section className="text-slate-300 text-xl  w-2/3 leading-6 ">
               My name is Sophie, i am a 32-year-old frontend developer with a
               passion for creating user-friendly and innovative digital
               experiences. <br /> My journey into the IT world began with a
