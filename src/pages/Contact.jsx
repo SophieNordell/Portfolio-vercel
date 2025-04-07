@@ -2,18 +2,13 @@ import { FaGithub } from "react-icons/fa";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillFacebook } from "react-icons/ai";
 import { ImMail4 } from "react-icons/im";
-import AnimationBee from "./animationbee";
 
 export default function Contact() {
   return (
-    <div className="flex flex-col justify-center items-center font-nunito bg-[#8F9779] ">
+    <div className="flex flex-col justify-center items-center font-nunito bg-[#4D5D53] ">
       <h1 className="text-2xl text-gray-300 font-serif font-bold mb-10 mt-10">
         Contact Information
       </h1>
-      <div className="p-5 mx-auto ">
-        <AnimationBee />
-      </div>
-
       <div className="mb-16 ">
         <a href="mailto:sophie.nordell@gmail.com">
           <button className=" text-blue-400 mr-2">

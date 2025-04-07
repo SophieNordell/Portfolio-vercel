@@ -1,267 +1,110 @@
 import { useState } from "react";
-import Modal from "./modal";
+import Modal from "@/components/modal";
+
+const projectsData = [
+  {
+    id: "zoom",
+    title: "Zoom Redesign",
+    description:
+      "In this school project, I utilized React, Tailwind, and JavaScript to redesign the Zoom website...",
+    image: "Zoom.png",
+    link: "https://zoom-redesign-pi.vercel.app/",
+  },
+  {
+    id: "radio",
+    title: "Radio Project",
+    description:
+      "In this school project, I created a radio application where I used JavaScript to fetch data from an API...",
+    image: "RadioPlayer.png",
+    link: "https://radio-player-react-blond.vercel.app/",
+  },
+  {
+    id: "bluey",
+    title: "Bluey Memory Game",
+    description:
+      "In one of my own projects, I created an interactive memory game specifically designed for young children...",
+    image: "blueyMemory.png",
+    link: "https://react-memory-game-kids.vercel.app/",
+  },
+  {
+    id: "weather",
+    title: "Cute Weather App",
+    description:
+      "My classmate and I developed this weather app, a charming mobile application using React Native and JavaScript...",
+    image: "väderapp.jpg",
+    link: "https://weather-cado-next.vercel.app/Home",
+  },
+  {
+    id: "rebelRunway",
+    title: "Rebel Runway",
+    description:
+      "In a recently completed school project, we were a group of six people working together to create an e-commerce website...",
+    image: "rebelrunway.png",
+    link: "https://rebel-runway-webshop-kazo5oylo-chasacademy-linnea-svensson.vercel.app/",
+  },
+  {
+    id: "aiAdWords",
+    title: "AI-AdWords",
+    description:
+      "Over the past six months, a colleague and I have been involved in an exciting project with the company Linespotting. Click the photo to go to the site.",
+    image: "adsaver.jpg",
+    link: "https://adsaver.org/",
+  },
+  {
+    id: "Gems",
+    title: "Gems",
+    description:
+      "We want to be a community that highlights games with female protagonists. We don’t want to exclude anyone, but rather fill a gap that many female gamers experience. By filtering out games where players can choose to play as a female character, we provide girls with a quick way to find games they can identify with more easily and create a community with others who play the same games. are a Vi vill vara ett community som lyfter spel med kvinnliga huvudkaraktärer. Vi vill inte exkludera någon, men fylla ett tomrum som finns hos många kvinnliga gamers. Genom att filtrera ut de spel där man kan välja att spela en kvinnlig karaktär ger man tjejer en snabb väg att hitta spel de kan identifiera sig med lättare och få ett community med andra som spelar samma spel. that wants to elevate games with female protagonists. Use the filter below to find your game for your platform and join our amazing community of Sheroes!",
+    image: "gems.png",
+    link: "https://www.figma.com/design/YBEITshpEeLAgL3kw2MX82/G.E.M.S-Projekt?node-id=2001-130&t=bBdduMs6mv07OhO3-1",
+  },
+];
 
 export default function Projects() {
-  const [isZoomModalOpen, setIsZoomModalOpen] = useState(false);
-  const [isRadioModalOpen, setIsRadioModalOpen] = useState(false);
-  const [isBlueyModalOpen, setIsBlueyModalOpen] = useState(false);
-  const [isWeatherModalOpen, setIsWeatherModalOpen] = useState(false);
-  const [isRebelRunwayModalOpen, setIsRebelRunwayModalOpen] = useState(false);
-  const [isAiAdWordsModalOpen, setIsAiAdWordsModalOpen] = useState(false);
+  const [openModals, setOpenModals] = useState({});
 
-  const openModal = (modalSetter) => {
-    modalSetter(true);
-  };
-
-  const closeModal = (modalSetter) => {
-    modalSetter(false);
+  const toggleModal = (id) => {
+    setOpenModals((prev) => ({ ...prev, [id]: !prev[id] }));
   };
 
   return (
-    <div className="relative text-center p-10 bg-[#4D5D53] flex flex-col justify-center gap-10 font-nunito ">
-      <h1 className="text-2xl text-gray-300 font-serif font-bold ">
-        To see some of my projects, click on a photo!
+    <div className="relative p-10 bg-[#8F9779] flex flex-col font-nunito">
+      <h1 className="text-3xl text-gray-300 font-serif pb-1">
+        Some of my projects
       </h1>
-      {/* ---------------------Zoom Project ----------------------- */}
-      <div className="grid grid-cols-1 md:grid-cols-3  mx-auto max-w-7xl gap-5 mt-16 bg-[#4D5D53]">
-        <div className="col-span-1 md:col-span-1 mt-5">
-          <a
-            href="https://zoom-redesign-pi.vercel.app/"
-            target="_blank"
-            className="col-span-1"
-          >
-            <img
-              className="w-full h-64  object-cover"
-              src="Zoom.png"
-              alt="projectZoom"
-            />
-          </a>
-          <div className="mt-8">
-            <h1 className="font-serif text-gray-300 text-xl">Zoom redesign</h1>
-            <div>
-              <button
-                onClick={() => openModal(setIsZoomModalOpen)}
-                className="bg-[#8F9779] text-white px-4 py-2 mt-4 rounded-md"
-              >
-                About the project
-              </button>
+      <p className="text-gray-200 text-sm  mb-10">
+        A glimpse into my growth and learning journey.
+      </p>
 
-              <Modal
-                isOpen={isZoomModalOpen}
-                onClose={() => closeModal(setIsZoomModalOpen)}
-                content="In this school project, I utilized React, 
-                Tailwind, and JavaScript to redesign the Zoom website and make it more 
-                structured and user-friendly. By implementing these technologies, I 
-                created a cleaner and more efficient user experience, resulting in a 
-                less cluttered and more organized design."
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* ------------------------------Radio Project----------------------------- */}
-        <div>
-          <a
-            href="https://radio-player-react-blond.vercel.app/"
-            target="_blank"
-            className="col-span-1"
-          >
-            <div className="rounded p-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 mx-auto max-w-7xl gap-20 mt-16  bg-[#8F9779]">
+        {projectsData.map(({ id, title, description, image, link }) => (
+          <div key={id} className="col-span-1 ">
+            <a href={link} target="_blank">
+              <h1 className="font-serif text-xl mb-2 bold text-gray-300">
+                {title}
+              </h1>
               <img
-                className="w-full h-64 object-cover"
-                src="RadioPlayer.png"
-                alt="Radio"
+                className="w-full h-64 object-contain bg-[#4D5D53] rounded-md p-3"
+                src={image}
+                alt={title}
               />
-            </div>
-          </a>
-          <div className="mt-3 flex flex-col">
-            <h1 className="font-serif text-gray-300 text-xl">Radio Project</h1>
-            <div>
+            </a>
+            <div className="mt-3">
               <button
-                onClick={() => openModal(setIsRadioModalOpen)}
-                className="bg-[#8F9779] text-white px-4 py-2 mt-4 rounded-md"
-              >
-                About the project
-              </button>
-              <Modal
-                isOpen={isRadioModalOpen}
-                onClose={() => closeModal(setIsRadioModalOpen)}
-                content="In this school project, I created a radio application 
-                where I used JavaScript to fetch data from an API. By integrating the 
-                API call directly into JavaScript, I was able to dynamically load radio 
-                content and provide users with a seamless radio experience."
-              />
-            </div>
-          </div>
-        </div>
-        {/* -----------------------------------Bluey Project--------------------------- */}
-        <div>
-          <a
-            href="https://react-memory-game-kids.vercel.app/"
-            target="_blank"
-            className="col-span-1 "
-          >
-            <div className="rounded p-5">
-              <img
-                className="w-full h-64 object-cover"
-                src="blueyMemory.png"
-                alt="Bluey Memory"
-              />
-            </div>
-          </a>
-
-          <div className="mt-3">
-            <h1 className="font-serif text-xl text-gray-300">
-              Bluey memory game for kids
-            </h1>
-            <div>
-              <button
-                onClick={() => openModal(setIsBlueyModalOpen)}
-                className="bg-[#8F9779] text-white px-4 py-2 mt-4 rounded-md"
-              >
-                About the project
-              </button>
-              <Modal
-                isOpen={isBlueyModalOpen}
-                onClose={() => closeModal(setIsBlueyModalOpen)}
-                content="In one of my own projects, I created an interactive memory game 
-                specifically designed for young children. By using React to build the 
-                interface, Tailwind CSS for styling, and JavaScript for the logic, 
-                I created an entertaining and educational gaming experience. The goal 
-                was to provide children with a fun platform for memory exercises while 
-                interacting with colorful and engaging elements."
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <h1 className="text-2xl mt-10 text-[#8F9779]">
-          ------ My Progress ------
-        </h1>
-      </div>
-
-      {/* -----------------------------NEW PROJECTS--------------------------------*/}
-
-      {/*  -------------------------- Weather app -------------------*/}
-      <div className="grid grid-cols-1 md:grid-cols-3 mb-20 mx-auto max-w-7xl gap-5 mt-16 bg-[#4D5D53]">
-        <div>
-          <a
-            href="https://github.com/SophieNordell/Weather-App"
-            target="_blank"
-            className="col-span-1"
-          >
-            <div className="rounded overflow-hidden">
-              <img
-                className="w-full h-64 object-cover"
-                src="weatherPhone.png"
-                alt="weatherApp"
-              />
-            </div>
-          </a>
-          <div className="mt-3">
-            <h1 className="font-serif text-xl text-gray-300">
-              Cute weather app
-            </h1>
-            <div>
-              <button
-                onClick={() => openModal(setIsWeatherModalOpen)}
-                className="bg-[#8F9779] text-white px-4 py-2 mt-4 rounded-md"
-              >
-                About the project
-              </button>
-              <Modal
-                isOpen={isWeatherModalOpen}
-                onClose={() => closeModal(setIsWeatherModalOpen)}
-                content="My classmate and I developed this weather app, 
-                a charming mobile application using React Native and JavaScript. 
-                This playful application is designed for both children and adults, 
-                offering an entertaining experience. By combining technology and 
-                user-friendliness, I created an app that appeals not only to younger 
-                audiences but also sparks joy and interest among adult users"
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* --------------------------- RebalRunway ---------------------------*/}
-        <div className="md:ml-10">
-          <a
-            href="https://rebel-runway-webshop-kazo5oylo-chasacademy-linnea-svensson.vercel.app/"
-            target="_blank"
-            className="w-11/12"
-          >
-            <div className="rounded overflow-hidden">
-              <img
-                className="w-full h-64 object-cover"
-                src="rebelrunway.png"
-                alt="projectZoom"
-              />
-            </div>
-          </a>
-          <div className="mt-3">
-            <h1 className="font-serif text-gray-300 text-xl">RebelRunway</h1>
-            <div>
-              <button
-                onClick={() => openModal(setIsRebelRunwayModalOpen)}
-                className="bg-[#8F9779] text-white px-4 py-2 mt-4 rounded-md"
-              >
-                About the project
-              </button>
-              <Modal
-                isOpen={isRebelRunwayModalOpen}
-                onClose={() => closeModal(setIsRebelRunwayModalOpen)}
-                content="In a recently completed school project, we were a group of six 
-                people working together to create an e-commerce website for clothing. 
-                By combining our skills in JavaScript, Tailwind CSS, and Typescript, 
-                we created a user-friendly and stylish platform. To manage our database 
-                structure, we chose Prisma, which provided us with an efficient and reliable 
-                solution for database interactions. The project not only gave us technical 
-                experience but also the opportunity to collaborate and develop our skills 
-                in web development. It was a rewarding experience where we integrated 
-                various technologies to create a complete and functional website."
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* -------------------- Ai-AdWords -----------------------*/}
-
-        <div className="md:ml-10">
-          <a href="" target="_blank" className="w-11/12">
-            <div className="rounded overflow-hidden flex items-center">
-              <img src="comingsoon3.jpg" alt="" />
-            </div>
-          </a>
-          <div className="mt-3">
-            <h1 className="font-serif text-xl text-gray-300 ">Ai-AdWords</h1>
-            <div>
-              <button
-                onClick={() => openModal(setIsAiAdWordsModalOpen)}
-                className="bg-[#8F9779] text-white px-4 py-2 mt-4 rounded-md"
+                onClick={() => toggleModal(id)}
+                className="bg-[#4D5D53] text-gray-300 px-2 py-2 rounded-md hover:bg-[#5f7266]"
               >
                 About the project
               </button>
 
               <Modal
-                isOpen={isAiAdWordsModalOpen}
-                onClose={() => closeModal(setIsAiAdWordsModalOpen)}
-                content="Over the past six months, a colleague and I have been 
-                involved in an exciting project with the company Linespotting during 
-                our internship. Our focus has been on creating a practical intermediary
-                 solution for those working with Google Ads. Leveraging technologies like
-                  Next.js and Tailwind CSS, we've built a responsive and efficient web 
-                  platform. Firebase serves as our robust database solution, and the project
-                   is smoothly coordinated through GitHub using Git for version control. 
-                   This experience has not only strengthened our technical skills but has 
-                   also provided insight into how real projects are managed and interact 
-                   with companies in the industry. The project will be launched in the near 
-                   future and will be available for use in the market."
+                isOpen={openModals[id] || false}
+                onClose={() => toggleModal(id)}
+                content={description}
               />
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );

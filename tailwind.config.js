@@ -10,6 +10,7 @@ module.exports = {
       nunito: ["Nunito", "sans-serif"],
     },
     extend: {
+      transform: ["group-hover"],
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
