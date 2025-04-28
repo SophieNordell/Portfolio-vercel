@@ -21,8 +21,8 @@ export default function Home() {
           experiences
         </p>
         <a
-          href="sophiecv.pdf"
-          download="sophiecv.pdf"
+          href="sophiecv.png"
+          download="sophiecv.png"
           className=" mt-4 w-fit px-2 py-2 border border-[#4D5D53] rounded-md bg-[#4D5D53] text-gray-300 hover:bg-gray-300 hover:text-gray-600 shadow-lg font-serif "
         >
           Download resume

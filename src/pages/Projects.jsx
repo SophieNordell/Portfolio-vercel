@@ -72,7 +72,7 @@ export default function Projects() {
       <h1 className="text-3xl text-gray-300 font-serif pb-1">
         Some of my projects
       </h1>
-      <p className="text-gray-200 text-sm  mb-10">
+      <p className="text-gray-200 text-sm mb-10">
         A glimpse into my growth and learning journey.
       </p>
 
