@@ -15,12 +15,12 @@ export default function Contact() {
       <div className=" flex mb-16 gap-8 ">
         <a href="mailto:sophie.nordell@gmail.com">
           <button className=" text-blue-400 mr-2">
-            <ImMail4 size={60} />
+            <ImMail4 size={50} />
           </button>
         </a>
         <a href="https://github.com/SophieNordell" target="_blank">
           <button className=" hover:text-slate-400 mr-2  text-gray-700">
-            <FaGithub className="text-gray-950" size={60} />
+            <FaGithub className="text-gray-950" size={50} />
           </button>
         </a>
 
@@ -29,13 +29,13 @@ export default function Contact() {
           target="_blank"
         >
           <button className="hover:text-slate-400 text-gray-700">
-            <AiFillLinkedin className="text-blue-500 mr-2" size={60} />
+            <AiFillLinkedin className="text-blue-500 mr-2" size={50} />
           </button>
         </a>
 
         <a href="https://www.facebook.com/sophie.nordell/" target="_blank">
           <button className="hover:text-slate-400 text-gray-700">
-            <AiFillFacebook className="text-blue-900" size={60} />
+            <AiFillFacebook className="text-blue-900" size={50} />
           </button>
         </a>
       </div>
