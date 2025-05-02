@@ -89,7 +89,7 @@ export default function Projects() {
               <h2 className="text-2xl font-serif text-gray-100 pb-3">
                 {title}
               </h2>
-              <div className="w-full h-60 bg-[#4D5D53] flex items-center justify-center overflow-hidden rounded-lg shadow-md">
+              <div className="w-full h-60 bg-[#4D5D53] flex items-center justify-center overflow-hidden rounded-lg md:shadow-md">
                 <img
                   className="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
                   src={image}
