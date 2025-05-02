@@ -8,6 +8,8 @@ module.exports = {
   theme: {
     fontFamily: {
       nunito: ["Nunito", "sans-serif"],
+      poppins: ["poppins", "san-serif"],
+      monserrat: ["Montserrat", "sans - serif"],
     },
     extend: {
       keyframes: {

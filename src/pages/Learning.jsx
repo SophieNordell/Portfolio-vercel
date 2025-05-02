@@ -7,25 +7,30 @@ import { FaFigma } from "react-icons/fa";
 
 export default function Learning() {
   const icons = [
-    <TbBrandJavascript className="text-yellow-500" size={65} />,
-    <GrReactjs className="text-blue-400" size={65} />,
-    <SiTailwindcss className="text-blue-500" size={65} />,
-    <SiNextdotjs className="text-black" size={65} />,
-    <DiCss3 className="text-indigo-500" size={65} />,
-    <AiFillHtml5 className="text-orange-600" size={65} />,
-    <SiTypescript className="text-blue-500" size={65} />,
-    <FaFigma
-      className="text-black
-    "
-      size={65}
-    />,
+    {
+      id: "js",
+      icon: <TbBrandJavascript className="text-yellow-500" size={65} />,
+    },
+    { id: "react", icon: <GrReactjs className="text-blue-400" size={65} /> },
+    {
+      id: "tailwind",
+      icon: <SiTailwindcss className="text-blue-500" size={65} />,
+    },
+    { id: "next", icon: <SiNextdotjs className="text-black" size={65} /> },
+    { id: "css", icon: <DiCss3 className="text-indigo-500" size={65} /> },
+    { id: "html", icon: <AiFillHtml5 className="text-orange-600" size={65} /> },
+    {
+      id: "typescript",
+      icon: <SiTypescript className="text-blue-500" size={65} />,
+    },
+    { id: "figma", icon: <FaFigma className="text-black" size={65} /> },
   ];
 
   return (
-    <div className="pt-16 bg-[#4D5D53] mx-auto font-nunito border-b border-slate-700 pb-10 overflow-hidden">
+    <div className="pt-16 bg-[#4D5D53] mx-auto font-nunito border-b border-slate-700 pb-16 overflow-hidden">
       <div className="flex animate-marquee whitespace-nowrap gap-36 w-max">
-        {[...icons, ...icons].map((icon, i) => (
-          <div key={i} className="flex-shrink-0">
+        {[...icons, ...icons].map(({ id, icon }) => (
+          <div key={id} className="flex-shrink-0">
             {icon}
           </div>
         ))}

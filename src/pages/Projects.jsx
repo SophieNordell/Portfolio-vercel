@@ -11,14 +11,7 @@ const projectsData = [
     image: "Zoom.png",
     link: "https://zoom-redesign-pi.vercel.app/",
   },
-  {
-    id: "radio",
-    title: "Radio Project",
-    description:
-      "In this school project, I created a radio application where I used JavaScript to fetch data from an API...",
-    image: "RadioPlayer.png",
-    link: "https://radio-player-react-blond.vercel.app/",
-  },
+
   {
     id: "bluey",
     title: "Bluey Memory Game",
@@ -71,9 +64,9 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="relative p-10 bg-[#8F9779] font-nunito min-h-screen"
+      className="relative p-10 bg-[#8F9779] font-monserrat min-h-screen"
     >
-      <h1 className="text-4xl text-gray-100 font-serif pb-2 text-center pt-10">
+      <h1 className="text-4xl font-semibold text-gray-100 pb-2 text-center pt-8">
         Some of my projects
       </h1>
       <p className="text-gray-200 text-lg mb-12 text-center">
@@ -86,25 +79,36 @@ export default function Projects() {
             key={id}
             className="flex flex-col p-6 bg-[#4D5D53] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 self-start"
           >
-            <a href={link} target="_blank" rel="noopener noreferrer">
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Click to view project"
+              className="relative group"
+            >
               <h2 className="text-2xl font-serif text-gray-100 pb-3">
                 {title}
               </h2>
-              <div className="w-full h-60 bg-[#4D5D53] flex items-center justify-center">
+              <div className="w-full h-60 bg-[#4D5D53] flex items-center justify-center overflow-hidden rounded-lg shadow-md">
                 <img
-                  className="max-h-full max-w-full object-contain"
+                  className="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
                   src={image}
                   alt={title}
                 />
+                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <span className="text-white text-lg font-semibold">
+                    Click to view my project
+                  </span>
+                </div>
               </div>
             </a>
             <div className="flex flex-col flex-1 p-6">
               {openCardId === id && (
-                <p className="text-gray-300 text-sm mt-2">{description}</p>
+                <p className="text-gray-300 text-base p-3">{description}</p>
               )}
               <button
                 onClick={() => toggleCard(id)}
-                className="mt-2 px-4 py-3 bg-gray-300 text-[#4D5D53] rounded-full hover:bg-gray-200 transition-colors transform hover:scale-105"
+                className="mt-2 py-3 bg-white text-[#4D5D53] font-semibold rounded-full hover:bg-gray-200 transition-colors transform hover:scale-105"
               >
                 {openCardId === id ? "Close" : "Read about the project"}
                 {openCardId === id ? (
