@@ -1,6 +1,5 @@
 import { FaGithub } from "react-icons/fa";
 import { AiFillLinkedin } from "react-icons/ai";
-import { AiFillFacebook } from "react-icons/ai";
 import { ImMail4 } from "react-icons/im";
 
 export default function Contact() {
@@ -30,12 +29,6 @@ export default function Contact() {
         >
           <button className="hover:text-slate-400 text-gray-700">
             <AiFillLinkedin className="text-blue-500 mr-2" size={50} />
-          </button>
-        </a>
-
-        <a href="https://www.facebook.com/sophie.nordell/" target="_blank">
-          <button className="hover:text-slate-400 text-gray-700">
-            <AiFillFacebook className="text-blue-900" size={50} />
           </button>
         </a>
       </div>
