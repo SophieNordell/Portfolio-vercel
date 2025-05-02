@@ -53,7 +53,7 @@ export default function Home() {
         <a
           href="sophiecv.png"
           download="sophiecv.png"
-          className="mt-10 mb-16  text-lg inline-flex items-center gap-2 py-3 px-10 border border-[#4D5D53] rounded-full bg-[#4D5D53] text-gray-100 hover:bg-white hover:text-[#4D5D53] transition-colors duration-300"
+          className="mt-16 mb-16 text-lg inline-flex items-center gap-2 py-3 px-10 border border-[#4D5D53] rounded-full bg-[#4D5D53] text-gray-100 hover:bg-white hover:text-[#4D5D53] transition-colors duration-300"
         >
           Download my resume <FaFileDownload />
         </a>
