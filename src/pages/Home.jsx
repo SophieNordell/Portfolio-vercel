@@ -1,5 +1,7 @@
 "use client";
+
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function Home() {
   const [text, setText] = useState("");
@@ -19,10 +21,12 @@ export default function Home() {
   return (
     <div className="font-monserrat min-h-screen flex flex-col md:flex-row items-center justify-around bg-[#8F9779] border-b-2 border-slate-700 text-white  ">
       <div className="bg-gradient-to-tr from-[#4D5D53] to-[#6e7b6e] p-2 rounded-full shadow-xl transform hover:scale-105 transition-transform duration-300 md:translate-y-[-30px]">
-        <img
-          className="rounded-full object-cover w-52 h-52 md:w-64 md:h-64 ring-4 ring-white drop-shadow-lg"
-          src="sophie.jpg"
+        <Image
+          src="/sophie.jpg"
           alt="Photo of me"
+          width={256}
+          height={256}
+          className="rounded-full object-cover w-52 h-52 md:w-64 md:h-64 ring-4 ring-white drop-shadow-lg"
         />
       </div>
 

@@ -29,8 +29,8 @@ export default function Learning() {
   return (
     <div className="pt-16 bg-[#4D5D53] mx-auto font-nunito border-b border-slate-700 pb-16 overflow-hidden">
       <div className="flex animate-marquee whitespace-nowrap gap-36 w-max">
-        {[...icons, ...icons].map(({ id, icon }) => (
-          <div key={id} className="flex-shrink-0">
+        {[...icons, ...icons].map(({ id, icon }, index) => (
+          <div key={`${id}-${index}`} className="flex-shrink-0">
             {icon}
           </div>
         ))}
