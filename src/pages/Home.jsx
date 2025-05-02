@@ -1,31 +1,50 @@
+"use client";
+import { useState, useEffect } from "react";
+
 export default function Home() {
+  const [text, setText] = useState("");
+  const name = "Hello, I am Sophie Nordell";
+  const speed = 100;
+
+  useEffect(() => {
+    let index = 0;
+    const interval = setInterval(() => {
+      setText(name.slice(0, index));
+      index++;
+      if (index > name.length) clearInterval(interval);
+    }, speed);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    // bg-[#8F9779] - ljusgrön
-    <div className="font-nunito p-5 flex md:justify-around border-b-2 border-slate-700 pt-16 bg-[#8F9779] ">
-      <div className="hidden md:block  ">
+    <div className="min-h-screen flex flex-col md:flex-row items-center justify-around bg-[#8F9779] border-b-2 border-slate-700 text-white px-4 py-8 md:py-16">
+      <div className="hidden md:block bg-[#4D5D53] md:p-8 rounded-lg shadow-xl">
         <img
-          className="rounded-3xl mb-16 shadow-2xl"
+          className="rounded-full shadow-2xl"
           src="sophie.jpg"
           alt="Photo of me"
           width={250}
+          height={250}
         />
       </div>
 
-      <div className="flex flex-col justify-center ">
-        <h1 className="font-bold text-4xl font-serif text-gray-300 mb-10 md:text-left  ">
-          Hello, <br />I am Sophie Nordell
+      <div className="flex flex-col items-center md:items-start text-center md:text-left w-full md:max-w-3xl">
+        <h1 className="font-bold text-3xl md:text-5xl font-serif text-white mb-2 md:mb-4 min-h-[72px] md:min-h-[96px] whitespace-nowrap overflow-hidden">
+          {text}
         </h1>
-        <p className="font-serif font-semibold text-xl text-gray-300 max-w-3xl">
+
+        <p className="font-medium text-base md:text-xl text-gray-100 leading-relaxed mt-6 md:mt-3">
           I’m a trained frontend developer currently studying UX/UI design to
           broaden my skillset and create more user-centered, intuitive
-          experiences
+          experiences.
         </p>
+
         <a
           href="sophiecv.png"
           download="sophiecv.png"
-          className=" mt-4 w-fit px-2 py-2 border border-[#4D5D53] rounded-md bg-[#4D5D53] text-gray-300 hover:bg-gray-300 hover:text-gray-600 shadow-lg font-serif "
+          className="mt-4 md:mt-6 inline-block px-4 py-2.5 border border-[#4D5D53] rounded-full bg-[#4D5D53] text-gray-100 hover:bg-white hover:text-[#4D5D53] transition-colors duration-300"
         >
-          Download resume
+          Download my resume
         </a>
       </div>
     </div>

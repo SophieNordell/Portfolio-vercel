@@ -1,5 +1,6 @@
 import { useState } from "react";
-import Modal from "@/components/modal";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+import ScrollToTop from "@/components/scrollToTop";
 
 const projectsData = [
   {
@@ -54,58 +55,69 @@ const projectsData = [
     id: "Gems",
     title: "Gems",
     description:
-      "We want to be a community that highlights games with female protagonists. We don’t want to exclude anyone, but rather fill a gap that many female gamers experience. By filtering out games where players can choose to play as a female character, we provide girls with a quick way to find games they can identify with more easily and create a community with others who play the same games. are a Vi vill vara ett community som lyfter spel med kvinnliga huvudkaraktärer. Vi vill inte exkludera någon, men fylla ett tomrum som finns hos många kvinnliga gamers. Genom att filtrera ut de spel där man kan välja att spela en kvinnlig karaktär ger man tjejer en snabb väg att hitta spel de kan identifiera sig med lättare och få ett community med andra som spelar samma spel. that wants to elevate games with female protagonists. Use the filter below to find your game for your platform and join our amazing community of Sheroes!",
+      "We want to be a community that highlights games with female protagonists. We don’t want to exclude anyone, but rather fill a gap that many female gamers experience...",
     image: "gems.png",
     link: "https://www.figma.com/design/YBEITshpEeLAgL3kw2MX82/G.E.M.S-Projekt?node-id=2001-130&t=bBdduMs6mv07OhO3-1",
   },
 ];
 
 export default function Projects() {
-  const [openModals, setOpenModals] = useState({});
+  const [openCardId, setOpenCardId] = useState(null);
 
-  const toggleModal = (id) => {
-    setOpenModals((prev) => ({ ...prev, [id]: !prev[id] }));
+  const toggleCard = (id) => {
+    setOpenCardId((prevId) => (prevId === id ? null : id));
   };
 
   return (
-    <div className="relative p-10 bg-[#8F9779] flex flex-col font-nunito">
-      <h1 className="text-3xl text-gray-300 font-serif pb-1">
+    <div
+      id="projects"
+      className="relative p-10 bg-[#8F9779] font-nunito min-h-screen"
+    >
+      <h1 className="text-4xl text-gray-100 font-serif pb-2 text-center pt-10">
         Some of my projects
       </h1>
-      <p className="text-gray-200 text-sm mb-10">
-        A glimpse into my growth and learning journey.
+      <p className="text-gray-200 text-lg mb-12 text-center">
+        A glimpse into my learning journey.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 mx-auto max-w-7xl gap-20 mt-16  bg-[#8F9779]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-14 max-w-5xl mx-auto">
         {projectsData.map(({ id, title, description, image, link }) => (
-          <div key={id} className="col-span-1 ">
-            <a href={link} target="_blank">
-              <h1 className="font-serif text-xl mb-2 bold text-gray-300">
+          <div
+            key={id}
+            className="flex flex-col p-6 bg-[#4D5D53] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 self-start"
+          >
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              <h2 className="text-2xl font-serif text-gray-100 pb-3">
                 {title}
-              </h1>
-              <img
-                className="w-full h-64 object-contain bg-[#4D5D53] rounded-md p-3"
-                src={image}
-                alt={title}
-              />
+              </h2>
+              <div className="w-full h-60 bg-[#4D5D53] flex items-center justify-center">
+                <img
+                  className="max-h-full max-w-full object-contain"
+                  src={image}
+                  alt={title}
+                />
+              </div>
             </a>
-            <div className="mt-3">
+            <div className="flex flex-col flex-1 p-6">
+              {openCardId === id && (
+                <p className="text-gray-300 text-sm mt-2">{description}</p>
+              )}
               <button
-                onClick={() => toggleModal(id)}
-                className="bg-[#4D5D53] text-gray-300 px-2 py-2 rounded-md hover:bg-[#5f7266]"
+                onClick={() => toggleCard(id)}
+                className="mt-2 px-4 py-3 bg-gray-300 text-[#4D5D53] rounded-full hover:bg-gray-200 transition-colors transform hover:scale-105"
               >
-                About the project
+                {openCardId === id ? "Close" : "Read about the project"}
+                {openCardId === id ? (
+                  <FaEyeSlash className="inline-block text-2xl " />
+                ) : (
+                  <FaEye className="inline-block text-2xl ml-2" />
+                )}
               </button>
-
-              <Modal
-                isOpen={openModals[id] || false}
-                onClose={() => toggleModal(id)}
-                content={description}
-              />
             </div>
           </div>
         ))}
       </div>
+      <ScrollToTop />
     </div>
   );
 }

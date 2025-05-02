@@ -5,11 +5,14 @@ import { ImMail4 } from "react-icons/im";
 
 export default function Contact() {
   return (
-    <div className="flex flex-col justify-center items-center font-nunito bg-[#4D5D53] ">
+    <div
+      id="contact"
+      className=" flex flex-col justify-center items-center font-nunito bg-[#4D5D53] "
+    >
       <h1 className="text-2xl text-gray-300 font-serif font-bold mb-10 mt-10">
-        Contact Information
+        Contact Me
       </h1>
-      <div className="mb-16 ">
+      <div className=" flex mb-16 gap-8 ">
         <a href="mailto:sophie.nordell@gmail.com">
           <button className=" text-blue-400 mr-2">
             <ImMail4 size={60} />
