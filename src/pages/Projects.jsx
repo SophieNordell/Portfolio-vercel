@@ -112,7 +112,7 @@ export default function Projects() {
               >
                 {openCardId === id ? "Close" : "Read about the project"}
                 {openCardId === id ? (
-                  <FaEyeSlash className="inline-block text-2xl " />
+                  <FaEyeSlash className="inline-block text-2xl ml-2 " />
                 ) : (
                   <FaEye className="inline-block md:text-2xl ml-2" />
                 )}
