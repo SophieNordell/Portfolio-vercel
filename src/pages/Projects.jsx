@@ -108,13 +108,13 @@ export default function Projects() {
               )}
               <button
                 onClick={() => toggleCard(id)}
-                className="mt-2 py-3 bg-white text-[#4D5D53] font-semibold rounded-full hover:bg-gray-200 transition-colors transform hover:scale-105"
+                className="md:mt-2 md:py-3 px-1 py-2 bg-white text-[#4D5D53] font-semibold rounded-full hover:bg-gray-200 transition-colors transform hover:scale-105"
               >
                 {openCardId === id ? "Close" : "Read about the project"}
                 {openCardId === id ? (
                   <FaEyeSlash className="inline-block text-2xl " />
                 ) : (
-                  <FaEye className="inline-block text-2xl ml-2" />
+                  <FaEye className="inline-block md:text-2xl ml-2" />
                 )}
               </button>
             </div>
