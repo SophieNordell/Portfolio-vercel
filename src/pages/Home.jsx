@@ -5,7 +5,6 @@ import { FaFileDownload } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa";
 import { MdBrush } from "react-icons/md";
 import { GrGrow } from "react-icons/gr";
-import Image from "next/image";
 
 export default function Home() {
   const [text, setText] = useState("");
@@ -25,7 +24,7 @@ export default function Home() {
   return (
     <div className="pt-32 md:pt-0 font-monserrat min-h-screen flex flex-col md:flex-row items-center justify-start md:justify-around gap-y-6 md:gap-y-0 bg-[#8F9779] border-b-2 border-slate-700 text-white">
       <div className="bg-gradient-to-tr from-[#4D5D53] to-[#6e7b6e] p-2 rounded-full shadow-xl transform hover:scale-105 transition-transform duration-300 md:translate-y-[-30px]">
-        <Image
+        <img
           src="/sophie.jpg"
           alt="Photo of me"
           width={300}
