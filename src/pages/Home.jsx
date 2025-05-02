@@ -22,7 +22,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="pt-32 md:pt-0 font-monserrat min-h-screen flex flex-col md:flex-row items-center justify-start md:justify-around gap-y-6 md:gap-y-0 bg-[#8F9779] border-b-2 border-slate-700 text-white">
+    <div className="pt-16 md:pt-0 font-monserrat min-h-screen flex flex-col md:flex-row items-center justify-start md:justify-around gap-y-6 md:gap-y-0 bg-[#8F9779] border-b-2 border-slate-700 text-white">
       <div className="bg-gradient-to-tr from-[#4D5D53] to-[#6e7b6e] p-2 rounded-full shadow-xl transform hover:scale-105 transition-transform duration-300 md:translate-y-[-30px]">
         <img
           src="/sophie.jpg"
@@ -53,7 +53,7 @@ export default function Home() {
         <a
           href="sophiecv.png"
           download="sophiecv.png"
-          className="mt-10 mb-10  text-lg inline-flex items-center gap-2 py-3 px-10 border border-[#4D5D53] rounded-full bg-[#4D5D53] text-gray-100 hover:bg-white hover:text-[#4D5D53] transition-colors duration-300"
+          className="mt-10 mb-16  text-lg inline-flex items-center gap-2 py-3 px-10 border border-[#4D5D53] rounded-full bg-[#4D5D53] text-gray-100 hover:bg-white hover:text-[#4D5D53] transition-colors duration-300"
         >
           Download my resume <FaFileDownload />
         </a>

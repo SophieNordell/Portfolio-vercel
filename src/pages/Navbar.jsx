@@ -29,9 +29,8 @@ export default function Navbar() {
         </a>
       </div>
 
-      {/* Hamburgermenyn för mobiler */}
-      <button className="md:hidden text-white" onClick={toggleMenu}>
-        <RxHamburgerMenu size={25} />
+      <button className="md:hidden text-black" onClick={toggleMenu}>
+        <RxHamburgerMenu className="text-black mr-10" size={30} />
       </button>
 
       {/* Mobilmeny */}
