@@ -23,7 +23,12 @@ export default function Learning() {
       id: "typescript",
       icon: <SiTypescript className="text-blue-500" size={65} />,
     },
-    { id: "figma", icon: <FaFigma className="text-black" size={65} /> },
+    {
+      id: "figma",
+      icon: (
+        <img src="figma1.avif" alt="figma icon" className="h-16 rounded-md" />
+      ),
+    },
   ];
 
   return (
