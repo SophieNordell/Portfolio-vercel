@@ -47,9 +47,9 @@ export default function Home() {
             {text}
           </h1>
 
-          <p className="font-medium text-base md:text-xl text-gray-100 leading-relaxed mt-6 md:mt-0 drop-shadow">
+          <p className="font-medium text-2xl md:text-xl text-gray-100 leading-relaxed mt-6 md:mt-0 drop-shadow">
             I’m a trained frontend developer{" "}
-            <FaLaptopCode className="inline ml-1 align-middle text-xl text-purple-700" />{" "}
+            <FaLaptopCode className="inline ml-1 align-middle  text-xl text-purple-700" />{" "}
             currently expanding my skills through UX/UI{" "}
             <MdBrush className="inline align-middle text-xl text-yellow-400" />{" "}
             design studies. I’m passionate about learning and love exploring how
@@ -62,7 +62,7 @@ export default function Home() {
           <a
             href="sophiecv.png"
             download="sophiecv.png"
-            className="mt-16 mb-16 text-lg inline-flex leading-relaxed items-center gap-2 py-3 drop-shadow px-10 border border-[#4D5D53] rounded-full bg-[#4D5D53] text-gray-100 hover:bg-[#6e7b6e] hover:text-white transition-colors duration-300"
+            className="mt-16 mb-16 font-semibold text-xl md:text-lg inline-flex leading-relaxed items-center gap-2 py-3 drop-shadow px-10 border border-[#4D5D53] rounded-full bg-[#4D5D53] text-gray-100 hover:bg-[#6e7b6e] hover:text-white transition-colors duration-300"
           >
             Download my resume <FaFileDownload />
           </a>

@@ -7,7 +7,7 @@ const projectsData = [
     id: "zoom",
     title: "Zoom Redesign",
     description:
-      "In this school project, I utilized React, Tailwind, and JavaScript to redesign the Zoom website...",
+      "In this school project, I used React, Tailwind CSS, and JavaScript to redesign the Zoom website. Click the image to view the project",
     image: "Zoom.png",
     link: "https://zoom-redesign-pi.vercel.app/",
   },
@@ -16,7 +16,7 @@ const projectsData = [
     id: "bluey",
     title: "Bluey Memory Game",
     description:
-      "In one of my own projects, I created an interactive memory game specifically designed for young children...",
+      "In one of my personal projects, I developed an interactive memory game tailored for young children. Click the image to view the project",
     image: "blueyMemory.png",
     link: "https://react-memory-game-kids.vercel.app/",
   },
@@ -24,7 +24,7 @@ const projectsData = [
     id: "weather",
     title: "Cute Weather App",
     description:
-      "My classmate and I developed this weather app, a charming mobile application using React Native and JavaScript...",
+      "A weather app developed as a school project to learn React Native, with an API integration for real-time weather data. Click the image to view the project",
     image: "väderapp.jpg",
     link: "https://weather-cado-next.vercel.app/Home",
   },
@@ -32,7 +32,7 @@ const projectsData = [
     id: "rebelRunway",
     title: "Rebel Runway",
     description:
-      "In a recently completed school project, we were a group of six people working together to create an e-commerce website...",
+      "A completed school project, we were a group of six people working together to create an e-commerce website called Rebel Runway. Click the image to view the project",
     image: "rebelrunway.png",
     link: "https://rebel-runway-webshop-kazo5oylo-chasacademy-linnea-svensson.vercel.app/",
   },
@@ -40,7 +40,7 @@ const projectsData = [
     id: "aiAdWords",
     title: "AI-AdWords",
     description:
-      "Over the past six months, a colleague and I have been involved in an exciting project with the company Linespotting. Click the photo to go to the site.",
+      "For 6 months, a colleague and I worked on an exciting project with the company Linespotting.  Click the image to view the project",
     image: "adsaver.jpg",
     link: "https://adsaver.org/",
   },
@@ -48,7 +48,7 @@ const projectsData = [
     id: "Gems",
     title: "Gems",
     description:
-      "We want to be a community that highlights games with female protagonists. We don’t want to exclude anyone, but rather fill a gap that many female gamers experience...",
+      "We want to be a community that highlights games with female protagonists. We don’t want to exclude anyone, but rather fill a gap that many gamers experience. Click the image to view the project",
     image: "gems.png",
     link: "https://www.figma.com/design/YBEITshpEeLAgL3kw2MX82/G.E.M.S-Projekt?node-id=2001-130&t=bBdduMs6mv07OhO3-1",
   },
