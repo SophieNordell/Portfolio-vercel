@@ -13,7 +13,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="flex justify-between items-center p-5 text-lg bg-[#4D5D53] border-b-2 border-slate-700">
+    <div className="flex relative justify-between items-center z-50 p-5 text-lg bg-[#4D5D53] border-b-2 border-slate-700">
       <img
         className="md:flex rounded-3xl w-56 sm:hidden"
         src="/sophie-logo.png"
