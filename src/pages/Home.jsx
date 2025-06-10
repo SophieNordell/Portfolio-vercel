@@ -42,8 +42,8 @@ export default function Home() {
           />
         </div>
 
-        <div className="flex flex-col items-center md:items-start text-center md:text-left w-full max-w-md md:max-w-3xl px-4 pt-16 md:pt-0">
-          <h1 className="font-bold text-3xl md:text-3xl font-serif text-white mb-2 min-h-[72px] md:min-h-[96px] whitespace-nowrap overflow-hidden drop-shadow-lg">
+        <div className="flex flex-col items-center md:items-start text-center md:text-left w-full max-w-sm md:max-w-3xl px-4 pt-10 md:pt-0">
+          <h1 className="font-bold  pr-10 text-3xl md:text-3xl font-serif text-white min-h-[72px] md:min-h-[96px] whitespace-nowrap overflow-hidden drop-shadow-lg">
             {text}
           </h1>
 
