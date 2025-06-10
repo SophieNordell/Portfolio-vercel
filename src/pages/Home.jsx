@@ -60,8 +60,8 @@ export default function Home() {
           </p>
 
           <a
-            href="sophiecv.png"
-            download="sophiecv.png"
+            href="CV 2025.pdf"
+            download="CV 2025.pdf"
             className="mt-16 mb-16 font-semibold text-xl md:text-lg inline-flex leading-relaxed items-center gap-2 py-3 drop-shadow px-10 border border-[#4D5D53] rounded-full bg-[#4D5D53] text-gray-100 hover:bg-[#6e7b6e] hover:text-white transition-colors duration-300"
           >
             Download my resume <FaFileDownload />
