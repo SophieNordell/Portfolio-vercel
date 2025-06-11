@@ -132,18 +132,18 @@ export default function Projects() {
 
       {/* Frontend projects */}
       <h2 className="text-xl text-white font-semibold text-center pb-6">
-        Frontend Projects
+        UX/UI Projects
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-14 max-w-5xl mx-auto mb-20">
-        {renderProjects(frontendProjects)}
+        {renderProjects(uxProjects)}
       </div>
 
       {/* UX projects */}
       <h2 className="text-xl text-white font-semibold text-center pb-6">
-        UX/UI Projects
+        Frontend Projects
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-14 max-w-5xl mx-auto">
-        {renderProjects(uxProjects)}
+        {renderProjects(frontendProjects)}
       </div>
 
       <ScrollToTop />
